@@ -12,3 +12,26 @@ total_sum = np.sum(arr)
 
 print("\nСума всіх елементів масиву:")
 print(total_sum)
+
+# знаходимо індекс максимального елемента у розгорнутому масиві
+max_index = np.argmax(arr)
+
+# знаходимо індекс мінімального елемента у розгорнутому масиві
+min_index = np.argmin(arr)
+
+
+# перетворюємо індекси у формат рядок-стовпець
+max_position = np.unravel_index(max_index, arr.shape)
+min_position = np.unravel_index(min_index, arr.shape)
+
+print("\nМаксимальне значення:")
+print(arr[max_position])
+
+print("Індекс максимального значення:")
+print(max_position)
+
+print("\nМінімальне значення:")
+print(arr[min_position])
+
+print("Індекс мінімального значення:")
+print(min_position)
