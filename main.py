@@ -35,3 +35,9 @@ print(arr[min_position])
 
 print("Індекс мінімального значення:")
 print(min_position)
+
+# сортуємо масив по кожному рядку
+sorted_arr = np.sort(arr, axis=1)
+
+print("\nМасив, відсортований по кожному рядку:")
+print(sorted_arr)
