@@ -6,3 +6,9 @@ arr = np.random.randint(1, 101, size=(3, 3))
 
 print("Початковий масив:")
 print(arr)
+
+# обчислюємо суму всіх елементів масиву
+total_sum = np.sum(arr)
+
+print("\nСума всіх елементів масиву:")
+print(total_sum)
